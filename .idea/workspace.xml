@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9cb372d8-cdb9-4583-abe2-29c3ff186357" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.circleci/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.circleci/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="9cb372d8-cdb9-4583-abe2-29c3ff186357" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +52,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580342466658</updated>
-      <workItem from="1580342471863" duration="4886000" />
+      <workItem from="1580342471863" duration="4976000" />
     </task>
     <task id="LOCAL-00001" summary="Update project requirements">
       <created>1580343623606</created>
@@ -86,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580350334889</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add unit tests for player">
+      <created>1580397132994</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1580397132994</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,17 +102,23 @@
     <option name="LAST_COMMIT_MESSAGE" value="Add unit tests for player" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="303" y="34" key="CommitChangelistDialog2" timestamp="1580350334305">
+    <state x="303" y="34" key="CommitChangelistDialog2" timestamp="1580397132866">
       <screen x="0" y="23" width="1440" height="817" />
     </state>
+    <state x="303" y="34" key="CommitChangelistDialog2/-1139.-1177.1920.1177/0.23.1440.817/781.-1177.1920.1177@0.23.1440.817" timestamp="1580397132866" />
     <state x="303" y="34" key="CommitChangelistDialog2/0.23.1440.817@0.23.1440.817" timestamp="1580350334305" />
     <state x="523" y="354" key="Github.CreateGistDialog" timestamp="1580342641452">
       <screen x="0" y="23" width="1440" height="817" />
     </state>
     <state x="523" y="354" key="Github.CreateGistDialog/0.23.1440.817@0.23.1440.817" timestamp="1580342641452" />
-    <state x="320" y="171" key="Vcs.Push.Dialog.v2" timestamp="1580350360700">
+    <state x="431" y="154" key="MultipleFileMergeDialog" timestamp="1580397157951">
       <screen x="0" y="23" width="1440" height="817" />
     </state>
+    <state x="431" y="154" key="MultipleFileMergeDialog/-1139.-1177.1920.1177/0.23.1440.817/781.-1177.1920.1177@0.23.1440.817" timestamp="1580397157951" />
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2" timestamp="1580397144690">
+      <screen x="0" y="23" width="1440" height="817" />
+    </state>
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2/-1139.-1177.1920.1177/0.23.1440.817/781.-1177.1920.1177@0.23.1440.817" timestamp="1580397144690" />
     <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.817@0.23.1440.817" timestamp="1580350360700" />
     <state x="397" y="264" key="com.intellij.ide.util.TipDialog" timestamp="1580342473802">
       <screen x="0" y="23" width="1440" height="817" />
