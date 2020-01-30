@@ -2,14 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9cb372d8-cdb9-4583-abe2-29c3ff186357" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test_player.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/pyvenv.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pyvenv.cfg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -42,7 +55,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580342466658</updated>
-      <workItem from="1580342471863" duration="3246000" />
+      <workItem from="1580342471863" duration="4033000" />
     </task>
     <task id="LOCAL-00001" summary="Update project requirements">
       <created>1580343623606</created>
@@ -58,7 +71,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580344065455</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add unit tests for player">
+      <created>1580348316721</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1580348316721</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -67,21 +87,22 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Update project requirements" />
     <MESSAGE value="Add functions for basic moves" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add functions for basic moves" />
+    <MESSAGE value="Add unit tests for player" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add unit tests for player" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="303" y="34" key="CommitChangelistDialog2" timestamp="1580344065305">
+    <state x="303" y="34" key="CommitChangelistDialog2" timestamp="1580348316083">
       <screen x="0" y="23" width="1440" height="817" />
     </state>
-    <state x="303" y="34" key="CommitChangelistDialog2/0.23.1440.817@0.23.1440.817" timestamp="1580344065305" />
+    <state x="303" y="34" key="CommitChangelistDialog2/0.23.1440.817@0.23.1440.817" timestamp="1580348316083" />
     <state x="523" y="354" key="Github.CreateGistDialog" timestamp="1580342641452">
       <screen x="0" y="23" width="1440" height="817" />
     </state>
     <state x="523" y="354" key="Github.CreateGistDialog/0.23.1440.817@0.23.1440.817" timestamp="1580342641452" />
-    <state x="320" y="171" key="Vcs.Push.Dialog.v2" timestamp="1580344076394">
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2" timestamp="1580348338414">
       <screen x="0" y="23" width="1440" height="817" />
     </state>
-    <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.817@0.23.1440.817" timestamp="1580344076394" />
+    <state x="320" y="171" key="Vcs.Push.Dialog.v2/0.23.1440.817@0.23.1440.817" timestamp="1580348338414" />
     <state x="397" y="264" key="com.intellij.ide.util.TipDialog" timestamp="1580342473802">
       <screen x="0" y="23" width="1440" height="817" />
     </state>
