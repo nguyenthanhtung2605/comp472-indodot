@@ -52,7 +52,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1580342466658</updated>
-      <workItem from="1580342471863" duration="4976000" />
+      <workItem from="1580342471863" duration="5121000" />
     </task>
     <task id="LOCAL-00001" summary="Update project requirements">
       <created>1580343623606</created>
@@ -124,9 +124,10 @@
       <screen x="0" y="23" width="1440" height="817" />
     </state>
     <state x="397" y="264" key="com.intellij.ide.util.TipDialog/0.23.1440.817@0.23.1440.817" timestamp="1580342473802" />
-    <state x="378" y="67" width="683" height="729" key="find.popup" timestamp="1580345567444">
+    <state x="378" y="67" width="683" height="729" key="find.popup" timestamp="1580397320939">
       <screen x="0" y="23" width="1440" height="817" />
     </state>
+    <state x="378" y="67" width="683" height="729" key="find.popup/-1139.-1177.1920.1177/0.23.1440.817/781.-1177.1920.1177@0.23.1440.817" timestamp="1580397320939" />
     <state x="378" y="67" width="683" height="729" key="find.popup/0.23.1440.817@0.23.1440.817" timestamp="1580345567444" />
   </component>
 </project>
