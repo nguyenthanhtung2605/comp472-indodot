@@ -7,7 +7,6 @@ Late Submissions 20% per day per late deliverable
 ```
 - Team Member 1:
 - Team Member 2:
-
 ```
 Teams must submit only 1 copy of the project via the team leader’s account.
 Purpose In this project, you will implement and analyse a heuristic search.
