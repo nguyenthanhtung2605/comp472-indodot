@@ -5,11 +5,14 @@ Late Submissions 20% per day per late deliverable
 
 ## Team <team_name>
 ```
-- Team Member 1:
-- Team Member 2:
+- Hongbo Liu: 29566228
+- Thanh Tung Nguyen: 40042891
 ```
 Teams must submit only 1 copy of the project via the team leader’s account.
 Purpose In this project, you will implement and analyse a heuristic search.
+
+### To run the program
+```python3 player.py -i <input_file_name> -s <search_algo_type>```
 
 ## Project Approach Requirements
 Implement a solution for the Indonesian Dot for any size of boards (n) from [3 to 10].
@@ -25,7 +28,7 @@ The project must implement the following 3 search (Heuristic Search) algorithms:
 ```
 
 ### 2.2 Programming Environment:
-TBD
+PyCharm on MacOS
 
 ### 2.3 The Input
 
