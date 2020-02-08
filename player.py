@@ -2,7 +2,10 @@
 Player library containing basic move operations.
 """
 
-import sys, getopt
+import getopt
+import helper
+import sys
+import dfs
 
 
 def main(argv):
@@ -32,17 +35,15 @@ def main(argv):
         elif opt in ("-o", "--ofile"):
             output_file = arg
 
-    print('Input file is "', input_file)
-    print('Search algorithm is "', search_algorithm)
-    print('Output file is "', output_file)
+    # print('Input file is "', input_file)
+    # print('Output file is "', output_file)
+
+    input_file = 'data/puzzles_test'
+
+    puzzle_list = helper.puzzles_reader(input_file)
+    for puzzle in puzzle_list:
+        dfs.search(puzzle)
 
 
 if __name__ == "__main__":
     main(sys.argv[1:])
-
-# def move_left(first_term, second_term):
-#     return first_term + second_term
-#
-#
-# def move_right(first_term, second_term):
-#     return first_term - second_term
