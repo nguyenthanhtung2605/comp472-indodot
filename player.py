@@ -10,7 +10,7 @@ import dfs
 
 def main(argv):
     input_file = ''
-    search_algorithm = ''
+    search_algorithm = 'DFS'
     output_file = ''
 
     try:
@@ -33,6 +33,8 @@ def main(argv):
 
         elif opt in ("-s", "--search"):
             search_algorithm = arg
+
+    print('Search algorithm is', search_algorithm)
 
     puzzle_list = helper.puzzles_reader(input_file)
     for puzzle in puzzle_list:

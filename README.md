@@ -1,15 +1,11 @@
+https://github.com/nguyenthanhtung2605/comp472-indodot
 # Comp472 - Project 1 - Indonesian Dot Puzzle
-## Due Date
-Due dates D1: Sunday Feb 9 + D2: Sunday March 1, 2020
-Late Submissions 20% per day per late deliverable
 
-## Team <team_name>
+## Team ***Artificial Ignorance***
 ```
-- Hongbo Liu: 29566228
+- Hongbo Liu: 29566228 <Leader>
 - Thanh Tung Nguyen: 40042891
 ```
-Teams must submit only 1 copy of the project via the team leader’s account.
-Purpose In this project, you will implement and analyse a heuristic search.
 
 ### To run the program
 ```python3 player.py -i <input_file_name> -s <search_algo_type>```

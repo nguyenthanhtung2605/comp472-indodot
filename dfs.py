@@ -4,7 +4,7 @@ import helper
 
 
 def search(puzzle):
-    print('Search algorithm is DFS')
+    print('Solving puzzle #', puzzle['id'])
     visited = dict()
     solution_path = deque()
     search_path = deque()
@@ -17,6 +17,7 @@ def search(puzzle):
     search_path.insert(0, "0   " + str(puzzle['board']))
 
     helper.write_to_file(str(puzzle['id']) + "_dfs", search_path, solution_path)
+    print('>> Solved\n')
 
 
 def depth_first_search(puzzle, depth, visited, parent, solution_path, search_path):
