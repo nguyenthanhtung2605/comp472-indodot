@@ -1,4 +1,4 @@
-from dfs import depth_first_search
+from math import sqrt
 
 
 def puzzles_reader(input_file):
@@ -153,7 +153,7 @@ def get_neighbour_index(direction, index, puzzle_size):
 
 
 def compute_h_simple(board, puzzle_size):
-    return -get_num_of_zero(board)*0.5 + get_connected_islands_count(board, puzzle_size)*2
+    return -get_num_of_zero(board) * 0.5 + get_connected_islands_count(board, puzzle_size) * 2
 
 
 def write_to_file_node(prefix, size, node, search_path):
@@ -185,3 +185,31 @@ def write_to_file_node(prefix, size, node, search_path):
 
     solution_file.close()
     search_file.close()
+
+
+class Node:
+    board_state = None
+    previous_node = None
+    previous_index = 0
+    previous_index_formated = None
+    h = 0
+    g = 0
+    f = 0
+
+    def __init__(self, h, board_state, previous_node, previous_index, is_astar=False):
+        self.board_state = board_state
+        self.previous_node = previous_node
+        self.previous_index = previous_index
+        self.previous_index_formated = format_index(previous_index, sqrt(len(board_state)))
+        self.h = h
+        if is_astar and previous_node is not None:
+            self.g = previous_node.g + 1
+            self.f = h * 5 + self.g
+        else:
+            self.f = h
+
+    def __lt__(self, other):
+        if self.f == other.f:
+            return get_firstzero_index(self.board_state) < get_firstzero_index(other.board_state)
+
+        return self.f < other.f

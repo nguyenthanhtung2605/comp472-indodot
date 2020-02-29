@@ -1,8 +1,8 @@
-from math import sqrt
-
-import helper
 import heapq
 from collections import deque
+
+import helper
+from helper import Node
 
 
 def search(puzzle):
@@ -48,27 +48,3 @@ def generate_children(node, open_list, visited, open_list_hashed, puzzle):
         if temp_board not in visited and temp_board not in open_list_hashed:
             heapq.heappush(open_list, Node(helper.compute_h_simple(temp_board, puzzle['size']), temp_board, node, i))
             open_list_hashed.add(temp_board)
-
-
-class Node:
-    board_state = None
-    previous_node = None
-    previous_index = 0
-    previous_index_formated = None
-    h = 0
-    g = 0
-    f = 0
-
-    def __init__(self, h, board_state, previous_node, previous_index):
-        self.board_state = board_state
-        self.previous_node = previous_node
-        self.previous_index = previous_index
-        self.previous_index_formated = helper.format_index(previous_index, sqrt(len(board_state)))
-        self.h = h
-        self.f = h + self.g
-
-    def __lt__(self, other):
-        if self.f == other.f:
-            return helper.get_firstzero_index(self.board_state) < helper.get_firstzero_index(other.board_state)
-
-        return self.f < other.f

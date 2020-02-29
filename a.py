@@ -1,8 +1,8 @@
-from math import sqrt
-
-import helper
 import heapq
 from collections import deque
+
+import helper
+from helper import Node
 
 
 def search(puzzle):
@@ -11,7 +11,7 @@ def search(puzzle):
     visited = set()
     search_path = deque()
 
-    open_list = [Node(helper.compute_h_simple(puzzle['board'], puzzle['size']), puzzle['board'], None, None)]
+    open_list = [Node(helper.compute_h_simple(puzzle['board'], puzzle['size']), puzzle['board'], None, None, True)]
     open_list_hashed = set()
     open_list_hashed.add(open_list[0].board_state)
 
@@ -46,32 +46,6 @@ def generate_children(node, open_list, visited, open_list_hashed, puzzle):
     for i in range(puzzle['size'] * puzzle['size']):
         temp_board = helper.flip_dot(i, puzzle, node.board_state)
         if temp_board not in visited and temp_board not in open_list_hashed:
-            heapq.heappush(open_list, Node(helper.compute_h_simple(temp_board, puzzle['size']), temp_board, node, i))
+            heapq.heappush(open_list,
+                           Node(helper.compute_h_simple(temp_board, puzzle['size']), temp_board, node, i, True))
             open_list_hashed.add(temp_board)
-
-
-class Node:
-    board_state = None
-    previous_node = None
-    previous_index = 0
-    previous_index_formated = None
-    h = 0
-    g = 0
-    f = 0
-
-    def __init__(self, h, board_state, previous_node, previous_index):
-        self.board_state = board_state
-        self.previous_node = previous_node
-        self.previous_index = previous_index
-        self.previous_index_formated = helper.format_index(previous_index, sqrt(len(board_state)))
-        self.h = h
-        if previous_node is not None:
-            self.g = previous_node.g + 1
-
-        self.f = h*5 + self.g
-
-    def __lt__(self, other):
-        if self.f == other.f:
-            return helper.get_firstzero_index(self.board_state) < helper.get_firstzero_index(other.board_state)
-
-        return self.f < other.f
