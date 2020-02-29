@@ -29,7 +29,7 @@ def depth_first_search(puzzle, depth, visited, parent, solution_path, search_pat
 
     while index < len(str(puzzle['board'])) and not skip:
 
-        temp_board = helper.flip_dot(index, puzzle)
+        temp_board = helper.flip_dot(index, puzzle, puzzle['board'])
 
         if (temp_board not in visited or (temp_board in visited and visited.get(temp_board) > depth)) and parent != temp_board:
 
