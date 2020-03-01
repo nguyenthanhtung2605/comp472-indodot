@@ -17,7 +17,8 @@ def search(puzzle):
     search_path.insert(0, "0   " + str(puzzle['board']))
 
     helper.write_to_file(str(puzzle['id']) + "_dfs", search_path, solution_path)
-    print('>> Solved\n')
+    print('>> Solved')
+    print('Path length: ', len(search_path), '\n')
 
 
 def depth_first_search(puzzle, depth, visited, parent, solution_path, search_path):

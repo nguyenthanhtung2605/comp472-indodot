@@ -100,7 +100,7 @@ def get_connected_islands_count(board, puzzle_size):
     board_arr = [int(dot) for dot in board]
 
     for x in board_arr:
-        if x == '1':
+        if x == 1:
             num += 1
             sink(board_arr, x, puzzle_size)
 
@@ -153,7 +153,7 @@ def get_neighbour_index(direction, index, puzzle_size):
 
 
 def compute_h_simple(board, puzzle_size):
-    return -get_num_of_zero(board) * 0.5 + get_connected_islands_count(board, puzzle_size) * 2
+    return -get_num_of_zero(board)*2 + get_connected_islands_count(board, puzzle_size)
 
 
 def write_to_file_node(prefix, size, node, search_path):
@@ -204,7 +204,7 @@ class Node:
         self.h = h
         if is_astar and previous_node is not None:
             self.g = previous_node.g + 1
-            self.f = h * 5 + self.g
+            self.f = h + self.g
         else:
             self.f = h
 
